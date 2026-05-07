@@ -1,0 +1,446 @@
+/* HomePage */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: white;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* LINK ANIMATION */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* underline animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #f4c542;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #f4c542;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url("images/MainArea\ GuaKelam.jpeg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+}
+
+/* Content */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Worker Image */
+.hero-img {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid white;
+    transition: transform 0.3s;
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
+}
+
+/* Text */
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    background: #f4c542;
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* button hover animation */
+.btn:hover {
+    background: #d4a62a;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+/* Responsive Additions */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero-img {
+        width: 140px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+}
+
+/* About Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* NAV LINKS ANIMATION */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #f4c542;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4c542;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* BACKGROUND */
+.about-page {
+    min-height: 100vh;
+    padding-top: 100px; /* IMPORTANT: prevents navbar overlap */
+    background: url("images/GuaKelamEntrace.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* WRAPPER LAYOUT */
+.about-wrapper {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+    padding: 20px;
+    align-items: center;
+}
+
+/* IMAGE */
+.about-photo img {
+    width: 220px;
+    border-radius: 12px;
+    border: 2px solid white;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* IMAGE HOVER ANIMATION */
+.about-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* INFO BOX */
+.about-box {
+    background: rgba(0,0,0,0.65);
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    flex: 1;
+}
+
+/* TITLE */
+.about-box h1 {
+    margin-bottom: 15px;
+}
+
+/* INFO ITEM */
+.info-item {
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+/* HOVER ANIMATION ON INFO */
+.info-item:hover {
+    background: rgba(244, 197, 66, 0.15);
+    transform: translateX(5px);
+}
+
+/* LABEL */
+.info-item span {
+    font-size: 12px;
+    color: #f4c542;
+    letter-spacing: 1px;
+}
+
+/* TEXT */
+.info-item p {
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE ADDITIONS */
+@media (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo img {
+        width: 180px;
+    }
+}
+
+/* WORK PAGE */
+.work-page {
+    min-height: 100vh;
+    background: url("images/GaleriGuaKelam.jpeg") no-repeat center/cover;
+    position: relative;
+    padding: 120px 20px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* OVERLAY */
+.work-page .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+
+/* MAIN CONTENT */
+.work-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 900px;
+    color: white;
+}
+
+/* HEADER */
+.work-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.work-header h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.work-header p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+    color: #dddddd;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+/* Vertical Line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #f4c542;
+}
+
+/* EACH ITEM */
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* DOT */
+.timeline-dot {
+    position: absolute;
+    left: -28px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    background: #f4c542;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* CARD */
+.timeline-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 12px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* CARD HOVER */
+.timeline-card:hover {
+    transform: translateX(8px);
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* DOT ANIMATION */
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.2);
+}
+
+/* TEXT */
+.timeline-card h2 {
+    color: #f4c542;
+    margin-bottom: 10px;
+}
+
+.timeline-card p {
+    line-height: 1.7;
+    color: #eeeeee;
+}
+
+/* RESPONSIVE ADDITIONS */
+@media (max-width: 768px) {
+
+    .work-header h1 {
+        font-size: 28px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-dot {
+        left: -18px;
+    }
+
+}
